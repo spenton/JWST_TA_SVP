@@ -1,0 +1,49 @@
+head	1.2;
+access;
+symbols;
+locks
+	penton:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2018.02.27.20.43.40;	author penton;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2018.02.27.20.10.49;	author penton;	state Exp;
+branches;
+next	;
+
+
+desc
+@turned verbose off by default
+@
+
+
+1.2
+log
+@changed get_jwst_dir calls to jwst_get_dir calls
+@
+text
+@function jwst_get_si_info_from_siaf,SI,verbose=verbose
+	if n_elements(verbose) ne 1 then verbose=0
+	rcs_id="$Id$"
+	uSI=strupcase(strtrim(SI,2))
+	siaf=jwst_read_si_siaf(uSI,verbose=verbose)
+	out={rcs_id:rcs_id,siaf:siaf,SI:SI}
+	return,out
+end
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d3 1
+a3 1
+	rcs_id="$Id"
+@

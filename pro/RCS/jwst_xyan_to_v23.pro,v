@@ -1,0 +1,37 @@
+head	1.1;
+access;
+symbols;
+locks
+	penton:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	2018.04.10.14.23.57;	author penton;	state Exp;
+branches;
+next	;
+
+
+desc
+@XYAN to V23
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@;+
+; FUNCTION: JWST_XYAN_TO_V23
+;-
+function jwst_xyan_to_v23,xan,yan,in_degrees=in_degrees,in_radians=in_radians
+	if n_elements(in_degrees) ne 1 then in_degrees=1
+	if n_elements(in_radians) ne 1 then in_radians=0
+		rcs_id="$Id$"
+		v2=(in_degrees ? 3600.0D : 1.0D)*double(xan)
+		v3=(in_degrees ? 3600.0D : 1.0D)*double(yan+0.13D)
+		out={v2:v2,v3:v3,xan:xan,yan:yan,in_degrees:in_degrees,in_radians:in_radians,rcs_id:rcs_id}
+	return,v23
+end
+@

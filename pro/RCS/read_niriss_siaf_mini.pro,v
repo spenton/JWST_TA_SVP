@@ -1,0 +1,67 @@
+head	1.2;
+access;
+symbols;
+locks
+	penton:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2018.02.27.20.43.40;	author penton;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2018.02.15.19.57.05;	author penton;	state Exp;
+branches;
+next	;
+
+
+desc
+@init
+@
+
+
+1.2
+log
+@changed get_jwst_dir calls to jwst_get_dir calls
+@
+text
+@pro read_niriss_siaf_mini
+	rcs_id="$Id: read_niriss_siaf_mini.pro,v 1.1 2018/02/15 19:57:05 penton Exp $"
+
+	FF='(A,A,A,A,A,I,I,F,F,I,I,F,F,F,F,F,F,F,I,F,I,F,F,F,F,F,F,F,F,F,F,A,I,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F,F)'
+	dir=jwst_get_dir()
+	datdir=jwst_get_dir(/dat)
+	txtdir=jwst_get_dir(/txt)
+	siafdir=jwst_get_dir(/siaf)
+	file='NIRISS_SIAF_mini.txt'
+	savefile='NIRISS_SIAF_mini.dat'
+	names="InstrName	AperName	DDCName	AperType	V2Ref	V3Ref'
+	message,/info,'READING '+siafdir+file
+	svp_readcol,siafdir+file,InstrName,AperName,DDCName,AperType,V2Ref,V3Ref
+	svp_forprint,InstrName,AperName,DDCName,AperType,V2Ref,V3Ref
+	stop
+end
+
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d2 1
+a2 1
+	rcs_id="$Id$"
+d5 4
+a8 4
+	dir=get_jwst_dir()
+	datdir=get_jwst_dir(/dat)
+	txtdir=get_jwst_dir(/txt)
+	siafdir=get_jwst_dir(/siaf)
+a13 2
+	print,names
+	help
+@

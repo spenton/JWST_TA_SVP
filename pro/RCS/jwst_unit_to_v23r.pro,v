@@ -1,0 +1,53 @@
+head	1.2;
+access;
+symbols;
+locks
+	penton:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2018.03.15.17.38.58;	author penton;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2018.02.15.19.57.05;	author penton;	state Exp;
+branches;
+next	;
+
+
+desc
+@init
+@
+
+
+1.2
+log
+@added rcs_id
+@
+text
+@function jwst_unit_to_v23r,uv
+	rcs_id="$Id$"
+	x=uv[0]
+	y=uv[1]
+	z=uv[2]
+
+	v2=atan(y,x)
+	v3=asin(z)
+
+	vr=[v2,v3]
+
+	return,double(vr)
+end
+
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d2 1
+@

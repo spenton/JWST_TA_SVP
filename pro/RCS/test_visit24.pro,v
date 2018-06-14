@@ -1,0 +1,28 @@
+head	1.1;
+access;
+symbols;
+locks
+	penton:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	2018.02.15.19.57.05;	author penton;	state Exp;
+branches;
+next	;
+
+
+desc
+@init
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@pro test_visit24
+
+end
+@

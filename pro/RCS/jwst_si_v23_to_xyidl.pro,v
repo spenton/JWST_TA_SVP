@@ -1,0 +1,154 @@
+head	1.4;
+access;
+symbols;
+locks
+	penton:1.4; strict;
+comment	@# @;
+
+
+1.4
+date	2018.04.10.14.23.57;	author penton;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2018.03.15.12.12.22;	author penton;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2018.02.27.20.43.40;	author penton;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2018.02.27.20.10.49;	author penton;	state Exp;
+branches;
+next	;
+
+
+desc
+@turned verbose off by default
+@
+
+
+1.4
+log
+@SI V23 to XYIDL
+@
+text
+@function jwst_si_v23_to_xyidl,v23,si,apername,verbose=verbose,debug=debug,$
+	v2ref=v2ref,v3ref=v3ref,vIdlparity=VIdlparity
+	if n_elements(debug) ne 1 then debug=0
+	if n_elements(verbose) ne 1 then verbose=0
+	rcs_id='$Id: jwst_si_v23_to_xyidl.pro,v 1.3 2018/03/15 12:12:22 penton Exp $'
+	FF='(F12.6)'
+	uSI=strupcase(strtrim(si,2))
+	uAPER=strupcase(strtrim(apername,2))
+	if verbose then message,/info,'Looking for SIAF info for '+uSI+' + '+uAPER
+	dv2=double(reform(v23[0,*]))
+	dv3=double(reform(v23[1,*]))
+
+	siaf=jwst_read_si_siaf(si,verbose=(verbose > 1))
+	index=where(siaf.APERNAME eq uAPER,count)
+	v3IdlYAngle=(reform(siaf.V3IDLYANGLE[index]))[0]
+	rv3IdlYAngle=(v3IdlYAngle)*!dtor
+	VIDLPARITY=(reform(siaf.VIDLPARITY[index]))[0]
+	if verbose then begin
+		message,/info,'APERNAME  = '+uAPER
+		message,/info,'[V2ref,V3ref] = ['+string1f(V2Ref,format=FF)+','+string1f(V3Ref,format=FF)+']'
+		message,/info,'[XDetref,YDetref] = ['+string1f(XDetRef,format=FF)+','+string1f(YDetRef,format=FF)+']'
+		message,/info,'[XSciref,YSciref] = ['+string1f(XSciRef,format=FF)+','+string1f(YSciRef,format=FF)+']'
+
+		message,/info,'V3IDLYANGE = '+string1f(v3IdlYAngle,format=FF)
+		message,/info,'VIDLPARITY = '+string1i(VIDLPARITY)
+	endif
+	V2Ref=(n_elements(V2ref) eq 1 ? V2Ref : reform(siaf.V2Ref[index]))
+	V3Ref=(n_elements(V3ref) eq 1 ? V3Ref : reform(siaf.V3Ref[index]))
+	XDetRef=(n_elements(XDetRef) eq 1 ? XDetRef : (reform(siaf.XDetRef[index]))[0])
+	YDetRef=(n_elements(YDetRef) eq 1 ? YDetRef : (reform(siaf.YDetRef[index]))[0])
+	XSciRef=(n_elements(XSciRef) eq 1 ? XSciRef : (reform(siaf.XSciRef[index]))[0])
+	YSciRef=(n_elements(YSciRef) eq 1 ? YSciRef : (reform(siaf.YSciRef[index]))[0])
+
+	xIdl = VIdlParity*(((dv2 - v2Ref)*cos(rv3IDLYAngle)) - ((dv3 - V3Ref)*sin(rv3IDLYAngle)))
+	yIdl = (dv2 - V2Ref)*sin(rv3IDLYAngle) + (dv3 - V3Ref)*cos(rv3IDLYAngle)
+	xyidl={xIdl:reform(xIDL),yIDL:reform(yIDL),xyIDL:[XIdl,YIdl],si:si,apername:apername,siaf:siaf,$
+		VIDLPARITY:VIDLPARITY,v3IdlYAngle:v3IdlYAngle,rv3IdlYAngle:rv3IdlYAngle,v2:dv2,v3:dv3,$
+		v2ref:v2ref,v3ref:v3ref}
+	if debug then help,xyidl,/str
+	return,xyidl
+end
+@
+
+
+1.3
+log
+@This should now work with vectors
+@
+text
+@d5 1
+a5 1
+	rcs_id='$Id: jwst_si_v23_to_xyidl.pro,v 1.2 2018/02/27 20:43:40 penton Exp $'
+d21 3
+d29 4
+d36 1
+a36 1
+	xy={xIdl:reform(xIDL),yIDL:reform(yIDL),xyIDL:[XIdl,YIdl],si:si,apername:apername,siaf:siaf,$
+d39 2
+a40 2
+	if debug then help,xy,/str
+	return,xy
+@
+
+
+1.2
+log
+@changed get_jwst_dir calls to jwst_get_dir calls
+@
+text
+@d4 2
+a5 2
+	if n_elements(verbose) ne 1 then verbose=1
+	rcs_id='$Id: jwst_si_v23_to_xyidl.pro,v 1.1 2018/02/27 20:10:49 penton Exp penton $'
+d10 2
+a11 2
+	dv2=double(v23[0])
+	dv3=double(v23[1])
+d15 1
+a15 1
+	v3IdlYAngle=reform(siaf.V3IDLYANGLE[index])
+d17 1
+a17 2
+	VIDLPARITY=reform(siaf.VIDLPARITY[index])
+
+d19 1
+a23 1
+
+d29 1
+a29 1
+	xy={xIdl:reform(xIDL[0]),yIDL:reform(yIDL[0]),xyIDL:[XIdl,YIdl],si:si,apername:apername,siaf:siaf,$
+d33 1
+a33 1
+	return,xy[0]
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d5 1
+a5 1
+	rcs_id='$Id$'
+d20 1
+a20 1
+		message,/info,'[V2ref,V3ref]='+string1f(V2Ref,format=FF)+','+string1f(V3Ref,format=FF)+']'
+d30 1
+a30 1
+	out={xIdl:reform(xIDL[0]),yIDL:reform(yIDL[0]),xyIDL:[XIdl,YIdl],si:si,apername:apername,siaf:siaf,$
+d33 2
+a34 2
+	if debug then help,out,/str
+	return,out[0]
+@
