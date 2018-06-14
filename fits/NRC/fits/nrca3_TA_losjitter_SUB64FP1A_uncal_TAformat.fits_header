@@ -1,0 +1,17 @@
+File: nrca3_TA_losjitter_SUB64FP1A_uncal_TAformat.fits
+
+No.    Name     Type      Cards Dimensions  Format
+ 0   PRIMARY   PrimaryHDU   7  (64,64,65)  int16     
+
+PRIMARY Header
+
+SIMPLE  =                    T / conforms to FITS standard
+BITPIX  =                   16 / array data type
+NAXIS   =                    3 / number of array dimensions
+NAXIS1  =                   64
+NAXIS2  =                   64
+NAXIS3  =                   65
+EXTEND  =                    T
+END
+
+

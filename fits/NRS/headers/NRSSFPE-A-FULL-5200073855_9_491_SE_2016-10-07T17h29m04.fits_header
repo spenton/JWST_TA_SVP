@@ -1,0 +1,415 @@
+File: NRSSFPE-A-FULL-5200073855_9_491_SE_2016-10-07T17h29m04.fits
+
+No.    Name     Type      Cards Dimensions  Format
+ 0   PRIMARY   PrimaryHDU   384  (2048,2048,3)  int16     
+
+ 1   ENG   BinTableHDU   15   11121R x 3C   [30A, 30A, 30A]     
+
+PRIMARY Header
+
+SIMPLE  =                    T / conforms to FITS standard
+BITPIX  =                   16 / array data type
+NAXIS   =                    3 / number of array dimensions
+NAXIS1  =                 2048
+NAXIS2  =                 2048
+NAXIS3  =                    3 / length of third data axis
+EXTEND  =                    T
+
+
+
+DATE    = '2015-07-19T07:55:16' / date file created (yyyy-mm-ddThh:mm:ss,UTC)
+BSCALE  =                    1 / scale factor for array value to physical value
+BZERO   =                32768 /Data is unsigned integer
+ORIGIN  = 'STScI   '           / institution responsible for creating FITS file
+FILENAME= 'NRSSFPE-A-FULL-5200073855_9_491_SE_2016-10-07T17h29m04' / name o
+FILETYPE= 'raw     '           / type of data found in data file
+ROOTNAME= 'NRSSFPE-A-FULL-5200073855' / rootname of the observation
+SRCFIL1 = 'NRS1_SFPE-A-FULL-5200073855_8.ssr' / Telemetry input file
+
+Observation Description
+
+TELESCOP= 'JWST    '           / telescope used to acquire data
+INSTRUME= 'NIRSPEC '           / instrument identifier used to acquire data
+OBSERVER= 'UNKNOWN '           / person responsible for acquiring data
+GS_JOBID= 'JLAB88_00025390'    / IGSS job number
+DATE-OBS= '2015-07-19'         / UT date of observation (yyyy-mm-dd)
+TIME-OBS= '07:40:50.977'       / Approximate UT time of start of observation (hh
+DATE-END= '2015-07-19'         / UT date of end of observation(yyyy-mm-dd)
+TIME-END= '07:42:49.081'       / UT time of end of observation (hh:mm:ss.sss)
+OBS_ID  = 'SFPE-A-FULL-5200073855' / PropID+VisitID+VisitGrpID+SeqID+ActID
+EXP_ID  =                    1 / Exp. request number within a single activity
+SCA_ID  =                  491 / Unique SCA identification in ISIM
+COMPRESS=                    F / T if input SSR data compressed, F if not
+DATAMODE=                   56 / Indicates post-processing in FPAP
+DETECTOR= 'NRS1    '           / ASCII Mnemonic corresponding to the SCA_ID
+TARGNAME= 'UNKNOWN '           / Target name
+OBSMODE = 'UNKNOWN '           / Observation mode
+
+/Readout Mode
+
+NSAMPLE =                    1 / A/D samples per read of a pixel
+NFRAME  =                    1 / Number of frames in group
+NGROUP  =                    3 / Number groups in an integration
+NINT    =                    1 / Number of integrations in an exposure
+TSAMPLE =                   10 / Delta time between samples in microsec
+TFRAME  =              10.7367 / Time in seconds between frames
+TGROUP  =              32.2103 / Delta time between groups
+DRPFRMS1=                    0 / Number of frame skipped prior to first integrat
+GROUPGAP=                    2 / Number of frames skipped
+DRPFRMS3=                    0 / Number of frames skipped between integrations
+FRMDIVSR=                    1 / Divisor applied to each group image
+INTAVG  =                    1 / Number of integrations averaged in one image
+NRESETS1=                    1 / Number of reset frames prior to first integrati
+NRESETS2=                    0 / Number of reset frames between each integration
+INTTIME =              75.1573 / Total integration time for one MULTIACCUM
+EXPTIME =              85.8941 / Exposure duration (seconds) calculated
+SUBARRAY=                    F / T if subarray used, F if not
+READOUT = 'NRSRAPIDD2'         / Readout pattern name
+ZROFRAME=                    F / T if zeroth frame present, F if not
+
+Image Quality
+
+DATAGAP =                    0 / number of data packets gaps
+CMPLTCON=                    0 / 0 normal completion
+
+Reference Data
+
+TREFROW =                    4 / top reference pixel rows
+BREFROW =                    4 / bottom reference pixel rows
+LREFCOL =                    4 / left col reference pixels
+RREFCOL =                    4 / right col reference pixels
+NREFIMG =                    0 / number of reference rows added to end
+NXREFIMG=                    0 / reference image columns
+NYREFIMG=                    0 / reference image rows
+CONFCASE= '' / GOSIM_CONFIG_CASE_FILE: The name of the Config
+LES_FILE= '' / GOSIM_LES_INI_FILE: INI filename currently in u
+SDMCFG  = '' / GOSIM_SDM_MASTER_CONFIG: Denotes the master spr
+SPMV1ENC=                  0.0 / GOSIM_SPMV1_ACT: SPMV1 actual/reduced encoder p
+SPMV2ENC=                  0.0 / GOSIM_SPMV2_ACT: SPMV2 actual/reduced encoder p
+SPMV3ENC=                  0.0 / GOSIM_SPMV3_ACT: SPMV3 actual/reduced encoder p
+PTMV1ENC=                  0.0 / GOSIM_PTMV1_ACT: PTMV1 actual/reduced encoder p
+PTMV2ENC=                  0.0 / GOSIM_PTMV2_ACT: PTMV2 actual/reduced encoder p
+PTMV3ENC=                  0.0 / GOSIM_PTMV3_ACT: PTMV3 actual/reduced encoder p
+FM3T2ENC=                  0.0 / GOSIM_FM3T2_ACT: FM3T2 actual/reduced encoder p
+FM3T3ENC=                  0.0 / GOSIM_FM3T3_ACT: FM3T3 actual/reduced encoder p
+PWH1T1EC=                  0.0 / GOSIM_PSMW1T1_ACT: PSMW1 actual/reduced encoder
+PWH2T1EC=                  0.0 / GOSIM_PSMW2T1_ACT: PSMW2 actual/reduced encoder
+PUPV1CDL=                  0.0 / GOSIM_CMD_PUPIL_V1_DLTA: Cmd V1 delta coord of
+PUPV2CDL=                  0.0 / GOSIM_CMD_PUPIL_V2_DLTA: Cmd V2 delta coord of
+PUPV3CDL=                  0.0 / GOSIM_CMD_PUPIL_V3_DLTA: Cmd V3 delta coord of
+SPMV1COF=                  0.0 / GOSIM_CMD_SPM_V1_OFFSET: Commanded V1 offset fr
+SPMV2COF=                  0.0 / GOSIM_CMD_SPM_V2_OFFSET: Commanded V2 offset fr
+SPMV3COF=                  0.0 / GOSIM_CMD_SPM_V3_OFFSET: Commanded V3 offset fr
+CURACT  =                  0.0 / IGDP_IT_OTP_CUR_ACT: Current Activity the expos
+NOMV1POS= '' / IGDP_OSIM_SV_SPM_V1_POS: Nominal OSIM SPM V1 Po
+NOMV2POS= '' / IGDP_OSIM_SV_SPM_V2_POS: Nominal OSIM SPM V2 Po
+NOMV3POS= '' / IGDP_OSIM_SV_SPM_V3_POS: Nominal OSIM SPM V3 Po
+PRD_VER = 'PRDITCIITS-L-047_PRDITCSC-L-010_PRDITCLOADS-A-016_PRDITCFLT-L-002' /
+IGSS_VER= 'IITS_6.0.2-06_29_2015' / The IGSS Software Version In Use
+ISIM_VER= '1.400000000000000e+01' / The ISIM FSW Version In Use
+ISIM_REV= '2.100000000000000e+01' / The ISIM FSW Revision In Use
+COLCORNR=                  1.0 / The Starting Column for NRS1
+ROWCORNR=                  1.0 / The Starting Row for NRS1
+
+ICE - RMA
+
+RMA_STEP= '0.000000000000000e+00' / INRSI_RMA_CNT: RMA Position in Step Number
+RMA_MIC = '2.761904911494639e-04' / IGDP_NRSI_RMA_MICRON: RMA Position in Micron
+
+ICE - CAA
+
+CAA_LAMP= 'NO_LAMP '           / INRSH_LAMP_SEL: CAA Powered Lamp
+CAA_CURR= '-2.287686000000000e-03' / INRSI_C_CAA_CURRENT: CAA Lamp Current in mA
+CAA_VOLT= '-8.771750000000000e-04' / INRSI_C_CAA_VOLTAGE: CAA Lamp Voltage in V
+
+ICE - FWA
+
+FWA_POS = 'F140X   '           / INRSI_FWA_MECH_POS: FWA latest determined mecha
+FWA_P_V = '2.079137520000000e+01' / INRSI_C_FWA_POSITION: FWA Position Sensor Ou
+FWA_P_AV= '0.000000000000000e+00' / INRSI_C_FWA_POS_REC: FWA REC aver. and calib
+
+ICE - GWA
+
+GWA_POS = 'MIRROR  '           / INRSI_GWA_MECH_POS: GWA latest determined mecha
+GWA_XP_V= '1.624311892000000e+02' / INRSI_C_GWA_X_POSITION: GWA X-Pos Sensor Out
+GWA_YP_V= '1.102354596000000e+02' / INRSI_C_GWA_Y_POSITION: GWA Y-Pos Sensor Out
+GWA_PXAV= '0.000000000000000e+00' / INRSI_C_GWA_X_POS_REC: GWA REC aver. and cal
+GWA_PYAV= '0.000000000000000e+00' / INRSI_C_GWA_Y_POS_REC: GWA REC aver. and cal
+GWA_XTIL= '0.000000000000000e+00' / INRSI_GWA_X_TILT_AVGED: GWA X-Tilt Averaged
+GWA_YTIL= '0.000000000000000e+00' / INRSI_GWA_Y_TILT_AVGED: GWA Y-Tilt Averaged
+GWA_TTIL= '-9.900000000000000e+01' / IGDP_NRSI_GWA_TILT_TEMP: GWA Temperature av
+
+ICE - OA Temps
+
+T_COM1  = '2.922199402164043e+02' / IGDP_NRSI_C_COM1_TEMP: Calibrated OA-COM1 Te
+T_FOR   = '2.912059166353971e+02' / IGDP_NRSI_C_FOR_TEMP: Calibrated OA-FOR Temp
+T_COL   = '2.934796941248390e+02' / IGDP_NRSI_C_COL_TEMP: Calibrated OA-COL Temp
+T_CAM   = '2.926014097401644e+02' / IGDP_NRSI_C_CAM_TEMP: Calibrated OA-CAM Temp
+T_BP1   = '2.914857609052795e+02' / IGDP_NRSI_C_BP1_TEMP: Calibrated OA-BP1 Temp
+T_BP2   = '2.903312042809297e+02' / IGDP_NRSI_C_BP2_TEMP: Calibrated OA-BP2 Temp
+T_BP3   = '2.928641747828839e+02' / IGDP_NRSI_C_BP3_TEMP: Calibrated OA-BP3 Temp
+T_BP4   = '2.924214974967243e+02' / IGDP_NRSI_C_BP4_TEMP: Calibrated OA-BP4 Temp
+T_IFU   = '2.922974516174390e+02' / IGDP_NRSI_C_IFU_TEMP: Calibrated OA-IFU Temp
+T_RMA   = '2.906116829279129e+02' / IGDP_NRSI_C_RMA_TEMP: Calibrated RMA Tempera
+T_FWA   = '2.934011124223022e+02' / IGDP_NRSI_C_FWA_TEMP: Calibrated FWA Tempera
+T_GWA   = '2.929569106330968e+02' / IGDP_NRSI_C_GWA_TEMP: Calibrated GWA Tempera
+T_CAA1  = '2.918289905405509e+02' / IGDP_NRSI_A_CAAL1_TEMP: Averaged Calibrated
+T_CAA2  = '2.917684634947538e+02' / IGDP_NRSI_A_CAAL2_TEMP: Averaged Calibrated
+T_CAA3  = '2.919557321368775e+02' / IGDP_NRSI_A_CAAL3_TEMP: Averaged Calibrated
+T_CAA4  = '2.920627392628876e+02' / IGDP_NRSI_A_CAAL4_TEMP: Averaged Calibrated
+
+MSS including MSA
+
+MSA_CONF= 'PRIMARYPARK_ALLCLOSED' / INRSM_MSA_CONFIG: MSA Commanded Configuratio
+MSA_APOS= '1.410000000000000e+02' / INRSM_MSA_MECH_POS: MSA Arm Position Resolve
+MSA_Q1_T= '4.676825757796401e+04' / INRSM_Q1_TMP: Quad 1 Temperature in K
+MSA_Q2_T= '4.573643103968239e+04' / INRSM_Q2_TMP: Quad 2 Temperature in K
+MSA_Q3_T= '4.559311800015673e+04' / INRSM_Q3_TMP: Quad 3 Temperature in K
+MSA_Q4_T= '4.646728971920200e+04' / INRSM_Q4_TMP: Quad 4 Temperature in K
+MSA_TEMP= '1.136464478363327e+05' / INRSM_MSA_TMP: MSA Temperature in K
+
+DS - ASIC1 Input
+
+A1_ROW_C= '0.000000000000000e+00' / INRSD_A1_WINDOWVSTART_A: Y-Position of Corne
+A1_COL_C= '0.000000000000000e+00' / INRSD_A1_WINDOWHSTART_A: X-Position of Corne
+A1_NROWS= '2.047000000000000e+03' / INRSD_A1_WINDOWHEIGHT_A: Number of Rows for
+A1_NCOLS= '2.047000000000000e+03' / INRSD_A1_WINDOWWIDTH_A: Number of Columns fo
+A1_CONF1= '2.184600000000000e+04' / INRSD_A1_CFG1_A: Configuration 1 Hex-String
+A1_CONF2= '0.000000000000000e+00' / INRSD_A1_CFG2_A: Configuration 2 Hex-String
+A1_RES1 = '1.000000000000000e+00' / INRSD_A1_RESETS1_A: Number of Reset Frames 1
+A1_RES2 = '1.000000000000000e+00' / INRSD_A1_RESETS2_A: Number of Reset Frames 2
+A1_DROP1= '0.000000000000000e+00' / INRSD_A1_DROPFRAMES1_A: Number of Dropped Fr
+A1_DROP2= '0.000000000000000e+00' / INRSD_A1_DROPFRAMES2_A: Number of Dropped Fr
+A1_DROP3= '0.000000000000000e+00' / INRSD_A1_DROPFRAMES3_A: Number of Dropped Fr
+
+DS - ASIC2 Input
+
+A2_ROW_C= '0.000000000000000e+00' / INRSD_A2_WINDOWVSTART_A: Y-Position of Corne
+A2_COL_C= '0.000000000000000e+00' / INRSD_A2_WINDOWHSTART_A: X-Position of Corne
+A2_NROWS= '2.047000000000000e+03' / INRSD_A2_WINDOWHEIGHT_A: Number of Rows for
+A2_NCOLS= '2.047000000000000e+03' / INRSD_A2_WINDOWWIDTH_A: Number of Columns fo
+A2_CONF1= '2.184600000000000e+04' / INRSD_A2_CFG1_A: Configuration 1 Hex-String
+A2_CONF2= '0.000000000000000e+00' / INRnSD_A2_CFG2_A: Configuration 2 Hex-String
+A2_RES1 = '1.000000000000000e+00' / INRSD_A2_RESETS1_A: Number of Reset Frames 1
+A2_RES2 = '1.000000000000000e+00' / INRSD_A2_RESETS2_A: Number of Reset Frames 2
+A2_DROP1= '0.000000000000000e+00' / INRSD_A2_DROPFRAMES1_A: Number of Dropped Fr
+A2_DROP2= '0.000000000000000e+00' / INRSD_A2_DROPFRAMES2_A: Number of Dropped Fr
+A2_DROP3= '0.000000000000000e+00' / INRSD_A2_DROPFRAMES3_A: Number of Dropped Fr
+
+DS - FPA/ASIC Temps
+
+T_ASIC1 = '1.263418105302455e+02' / IGDP_NRSD_ALG_A1_TEMP: Converted ASIC1 Tempe
+T_ASIC2 = '1.234644358269237e+02' / IGDP_NRSD_ALG_A2_TEMP: Converted ASIC2 Tempe
+T_FPA   = '4.642855610792549e+01' / IGDP_NRSD_ALG_FPA_TEMP: Converted FPA Temper
+A1_CVDDA=              47103.0 / ASIC-1 VDDA commanded voltage
+A2_CVDDA= 'UNKNOWN '           / ASIC-2 VDDA commanded voltage
+A1_CIDDA=              64512.0 / ASIC-1 VDDA commanded current
+A2_CIDDA= 'UNKNOWN '           / ASIC-2 VDDA commanded current
+A1CVDSUB=              33024.0 / ASIC-1 DSUB commanded voltage
+A2CVDSUB= 'UNKNOWN '           / ASIC-2 DSUB commanded voltage
+A1CIDSUB=              24576.0 / ASIC-1 DSUB commanded current
+A2CIDSUB= 'UNKNOWN '           / ASIC-2 DSUB commanded current
+A1CVVRST=              45184.0 / ASIC-1 VRESET commanded voltage
+A2CVVRST= 'UNKNOWN '           / ASIC-2 VRESET commanded voltage
+A1CIVRST=              20480.0 / ASIC-1 VRESET commanded current
+A2CIVRST= 'UNKNOWN '           / ASIC-2 VRESET commanded current
+A1CVCLDR=              32768.0 / ASIC-1 CELLDRAIN commanded voltage
+A2CVCLDR= 'UNKNOWN '           / ASIC-2 CELLDRAIN commanded voltage
+A1CICLDR=              64512.0 / ASIC-1 CELLDRAIN commanded current
+A2CICLDR= 'UNKNOWN '           / ASIC-2 CELLDRAIN commanded current
+A1_CVDRN=              33075.0 / ASIC-1 DRAIN commanded voltage
+A2_CVDRN= 'UNKNOWN '           / ASIC-2 DRAIN commanded voltage
+A1_CIDRN=              32768.0 / ASIC-1 DRAIN commanded current
+A2_CIDRN= 'UNKNOWN '           / ASIC-2 DRAIN commanded current
+A1_CVVDD=              47103.0 / ASIC-1 VDD commanded voltage
+A2_CVVDD= 'UNKNOWN '           / ASIC-2 VDD commanded voltage
+A1_CIVDD=              64512.0 / ASIC-1 VDD commanded current
+A2_CIVDD= 'UNKNOWN '           / ASIC-2 VDD commanded current
+A1CVVBGT=              34278.0 / ASIC-1 VBIASGATE commanded voltage
+A2CVVBGT= 'UNKNOWN '           / ASIC-2 VBIASGATE commanded voltage
+A1CIVBGT=              16384.0 / ASIC-1 VBIASGATE commanded current
+A2CIVBGT= 'UNKNOWN '           / ASIC-2 VBIASGATE commanded current
+A1CVVBPW=              34815.0 / ASIC-1 VBIASPOWER commanded voltage
+A2CVVBPW= 'UNKNOWN '           / ASIC-2 VBIASPOWER commanded voltage
+A1CIVBPW=              32768.0 / ASIC-1 VBIASPOWER commanded current
+A2CIVBPW= 'UNKNOWN '           / ASIC-2 VBIASPOWER commanded current
+A1_CVGND=              56381.0 / ASIC-1 GND commanded voltage
+A2_CVGND= 'UNKNOWN '           / ASIC-2 GND commanded voltage
+A1_CIGND=              42431.0 / ASIC-1 GND commanded current
+A2_CIGND= 'UNKNOWN '           / ASIC-2 GND commanded current
+A1MVREFM=   0.8330986944359999 / ASIC-1 VREFMAIN measured voltage
+A2MVREFM= 'UNKNOWN '           / ASIC-2 VREFMAIN measured voltage
+
+OSIM Status Information
+
+SIM_MODE= 'OFF     '           / GOSIM_SIM_MODE: OSIM Simulation  Mode Flag (0=O
+SDM_MODE= 'UNDEFINED'          / GOSIM_SDM_OPMODE: SDM Operation Mode
+G_OBS_ID= '' / GOSIM_OBS_ID: Observation ID
+TEST_ID = '' / GOSIM_TEST_ID: OSIM Test ID
+ERROR   = 'NO_ERROR'           / GOSIM_ERROR: OSIM Error (1) or No Error (0)
+CURFERUL= 'UNDEFINED'          / GOSIM_CUR_SUPFERRULE: Current Primary Pointing
+CURFIBER=                  0.0 / GOSIM_CUR_SUBFIBER: Current Primary Pointing Su
+COORDSYS= 'OTESKY_AM'          / GOSIM_COORD_SYS: Commanded Coordinate System fo
+XCMDPOS =                  0.0 / GOSIM_CMD_FIELD_COORD_X: Cmd Field Coord X for
+YCMDPOS =                  0.0 / GOSIM_CMD_FIELD_COORD_Y: Cmd Field Coord Y for
+XACTPOS =                  0.0 / GOSIM_CUR_FIELD_COORD_X: Calculated Field Coord
+YACTPOS =                  0.0 / GOSIM_CUR_FIELD_COORD_Y: Calculated Field Coord
+SPMFCMD = 'CHIEF_RAY'          / GOSIM_SPM_FOCUS_MODE: Source Plate Mechanism Fo
+AIMGFSOF=                  0.0 / GOSIM_CUR_IMG_FS_OFFST: Calculated focus offset
+AV2IMGOF=                  0.0 / GOSIM_CUR_IMG_FS_V2: Calculated V2 coordinate o
+AV3IMGOF=                  0.0 / GOSIM_CUR_IMG_FS_V3: Calculated V3 coordinate o
+PUPV1ADL=                  0.0 / GOSIM_CUR_PUPIL_V1_DLTA: Calculated V1 delta co
+PUPV2ADL=                  0.0 / GOSIM_CUR_PUPIL_V2_DLTA: Calculated V2 delta co
+PUPV3ADL=                  0.0 / GOSIM_CUR_PUPIL_V3_DLTA: Calculated V3 delta co
+SPMV1AOF=                  0.0 / GOSIM_CUR_SPM_V1_OFFSET: Current V1 offset from
+SPMV2AOF=                  0.0 / GOSIM_CUR_SPM_V2_OFFSET: Current V2 offset from
+SPMV3AOF=                  0.0 / GOSIM_CUR_SPM_V3_OFFSET: Current V3 offset from
+SDMLFIRE= '' / GGDP_SDM_LAST_FIRED_AT: The timestamp from the
+ADMCHECK= 'UNDEFINED'          / GOSIM_ADM_CHECK_RESULT: The result of an ADM Ch
+ADMTGT  = 'UNDEFINED'          / GOSIM_ADM_TARGET: Most recent ADM Target that w
+ADMTOL  =                  0.0 / GOSIM_ADM_TOLERANCE: ADM Check Tolerance
+ADMEND  = 'CLOSE   '           / GOSIM_ADM_END_STATE: ADM Check End State
+ADMAPPOS= 'LARGE   '           / GOSIM_ADM_APWH_POS: ADM Aperture Wheel Position
+ADM_DEV =                  0.0 / GOSIM_ADM_DEVIATION: The deviation from nominal
+ADM_UNIT= 'NONE    '           / GOSIM_ADM_UNITS: The units for GOSIM_ADM_DEVIAT
+ADM_LCHK= '' / GGDP_ADM_LAST_CHECK: Timestamp of the last ADM
+ADM_MODE= 'UNDEFINED'          / GOSIM_ADM_MODE: ADM Mode from the last ADM Chec
+PSMW1POS= 'PAR1    '           / GOSIM_PSM_W1_CUR_POS: Current PSM Wheel 1 Posit
+PSMW2POS= 'FINE_PHASEPLATE'    / GOSIM_PSM_W2_CUR_POS: Current PSM Wheel 2 Posit
+SPM_MOV = 'NOT_MOVING'         / GOSIM_SPM_MOVING: Source Plate Mechanism is MOV
+PIMPOWR = 'OFF     '           / GOSIM_PIM_POWER: PIM Power State
+MCAPOWR = 'OFF     '           / GOSIM_MCA_POWER: MCA Power State
+CBTFITP =                  0.0 / GOSIM_TEMP_IS_TFI: SDM Cold Box TFI module temp
+CBNRCATP=                  0.0 / GOSIM_TEMP_IS_NIRCAMA: SDM Cold Box NIRCAMA mod
+CBNRCBTP=                  0.0 / GOSIM_TEMP_IS_NIRCAMB: SDM Cold Box NIRCAMB mod
+CBFGSATP=                  0.0 / GOSIM_TEMP_IS_FGSA: SDM Cold Box FGSA module te
+CBFGSBTP=                  0.0 / GOSIM_TEMP_IS_FGSB: SDM Cold Box FGSB module te
+PIMTSETP=                  0.0 / GOSIM_PIM_TEMP_SETP: PIM Temperature Setpoint i
+PIMTEMP =                  0.0 / GOSIM_PIM_CURR_TEMP: PIM Current Temperature in
+PDITSETP=                  0.0 / GOSIM_PDI_TEMP_SETP: PDI Temperature Setpoint i
+PDITEMP =                  0.0 / GOSIM_PDI_CURR_TEMP: PDI Current Temperature in
+DIFLMPT1=                  0.0 / GOSIM_TEMP_DIFFLAMP1_2: SDM Temperature for Dif
+DIFLMPT3=                  0.0 / GOSIM_TEMP_DIFFLAMP3_4: SDM Temperature for Dif
+DFLMP1PW= 'OFF     '           / GOSIM_DIFFLAMP1_PWR: On/Off status for diffuser
+DFLMP2PW= 'OFF     '           / GOSIM_DIFFLAMP2_PWR: On/Off status for diffuser
+DFLMP3PW= 'OFF     '           / GOSIM_DIFFLAMP3_PWR: On/Off status for diffuser
+DFLMP4PW= 'OFF     '           / GOSIM_DIFFLAMP4_PWR: On/Off status for diffuser
+SPM_ENA = 'INACTIVE'           / GOSIM_SPM_ACTIVE: SPM Active Flag as sent via t
+PTM_ENA = 'INACTIVE'           / GOSIM_PTM_ACTIVE: PTM Active Flag as sent via t
+FM3_ENA = 'INACTIVE'           / GOSIM_FM3_ACTIVE: FM3 Active Flag as sent via t
+PSMW1ENA= 'INACTIVE'           / GOSIM_PSMW1_ACTIVE: PSMW1 Active Flag as sent v
+PSMW2ENA= 'INACTIVE'           / GOSIM_PSMW2_ACTIVE: PSMW2 Active Flag as sent v
+PUPWANEN= 'OFF     '           / GOSIM_INCL_PUP_WANDER: Include OTE Pupil Wander
+SPV2AVAL=                  0.0 / GOSIM_LES_VAL_SPM_V2A: The Value of the cartesi
+SPV3AVAL=                  0.0 / GOSIM_LES_VAL_SPM_V3A: The Value of the cartesi
+SPV2BVAL=                  0.0 / GOSIM_LES_VAL_SPM_V2B: The Value of the cartesi
+SPV3BVAL=                  0.0 / GOSIM_LES_VAL_SPM_V3B: The Value of the cartesi
+SPV1AVAL=                  0.0 / GOSIM_LES_VAL_SPM_V1A: The Value of the linear
+SPV1BVAL=                  0.0 / GOSIM_LES_VAL_SPM_V1B: The Value of the linear
+PUV2AVAL=                  0.0 / GOSIM_LES_VAL_PUP_V2A: The Value of the cartesi
+PUV3AVAL=                  0.0 / GOSIM_LES_VAL_PUP_V3A: The Value of the cartesi
+PUV2BVAL=                  0.0 / GOSIM_LES_VAL_PUP_V2B: The Value of the cartesi
+PUV3BVAL=                  0.0 / GOSIM_LES_VAL_PUP_V3B: The Value of the cartesi
+PUV1AVAL=                  0.0 / GOSIM_LES_VAL_PUP_V1A: The Value of the linear
+PUV1BVAL=                  0.0 / GOSIM_LES_VAL_PUP_V1B: The Value of the linear
+FMT2AVAL=                  0.0 / GOSIM_LES_VAL_FM3_T2A: The Value of the sector
+FMT2BVAL=                  0.0 / GOSIM_LES_VAL_FM3_T2B: The Value of the sector
+FMT3AVAL=                  0.0 / GOSIM_LES_VAL_FM3_T3A: The Value of the sector
+FMT3BVAL=                  0.0 / GOSIM_LES_VAL_FM3_T3B: The Value of the sector
+SPV23AER= 'NO_ERROR'           / GOSIM_LES_ERR_SPM_V2V3A: Decode Error Value for
+SPV23BER= 'NO_ERROR'           / GOSIM_LES_ERR_SPM_V2V3B: Decode Error Value for
+SPV1AER = 'NO_ERROR'           / GOSIM_LES_ERR_SPM_V1A: Decode Error Value for t
+SPV1BER = 'NO_ERROR'           / GOSIM_LES_ERR_SPM_V1B: Decode Error Value for t
+PUV23AER= 'NO_ERROR'           / GOSIM_LES_ERR_PUP_V2V3A: Decode Error Value for
+PUV23BER= 'NO_ERROR'           / GOSIM_LES_ERR_PUP_V2V3B: Decode Error Value for
+PUV1AER = 'NO_ERROR'           / GOSIM_LES_ERR_PUP_V1A: Decode Error Value for t
+PUV1BER = 'NO_ERROR'           / GOSIM_LES_ERR_PUP_V1B: Decode Error Value for t
+FMT2AER = 'NO_ERROR'           / GOSIM_LES_ERR_FM3_T2A: Decode Error Value for t
+FMT2BER = 'NO_ERROR'           / GOSIM_LES_ERR_FM3_T2B: Decode Error Value for t
+FMT3AER = 'NO_ERROR'           / GOSIM_LES_ERR_FM3_T3A: Decode Error Value for t
+FMT3BER = 'NO_ERROR'           / GOSIM_LES_ERR_FM3_T3B: Decode Error Value for t
+MCRFIR  = 'EXTINGUISHED'       / GOSIM_CUR_FIR_MCR: Source Fiber for MCR Illumin
+PDI1FIR = 'EXTINGUISHED'       / GOSIM_CUR_FIR_PDI1: Source Fiber for PDI1 Illum
+PDI2FIR = 'EXTINGUISHED'       / GOSIM_CUR_FIR_PDI2: Source Fiber for PDI2 Illum
+PDI3FIR = 'EXTINGUISHED'       / GOSIM_CUR_FIR_PDI3: Source Fiber for PDI3 Illum
+PDI4FIR = 'EXTINGUISHED'       / GOSIM_CUR_FIR_PDI4: Source Fiber for PDI4 Illum
+CPDI1FIR= 'EXTINGUISHED'       / GOSIM_CMD_FIR_PDI1: Source Fiber for PDI1 Illum
+CPDI2FIR= 'EXTINGUISHED'       / GOSIM_CMD_FIR_PDI2: Source Fiber for PDI2 Illum
+CPDI3FIR= 'EXTINGUISHED'       / GOSIM_CMD_FIR_PDI3: Source Fiber for PDI3 Illum
+CPDI4FIR= 'EXTINGUISHED'       / GOSIM_CMD_FIR_PDI4: Source Fiber for PDI4 Illum
+CMCRFIR = 'EXTINGUISHED'       / GOSIM_CMD_FIR_MCR: Source Fiber for MCR Illumin
+NRSP1SRC= 'UNDEFINED'          / GOSIM_NIRSPEC1_SOURCE: NIRSpec1 Fiber Source
+NRSP2SRC= 'UNDEFINED'          / GOSIM_NIRSPEC2_SOURCE: NIRSpec2 Fiber Source
+NRSP3SRC= 'UNDEFINED'          / GOSIM_NIRSPEC3_SOURCE: NIRSpec3 Fiber Source
+NRSP4SRC= 'UNDEFINED'          / GOSIM_NIRSPEC4_SOURCE: NIRSpec4 Fiber Source
+NRSP1MOD= 'UNDEFINED'          / GOSIM_NIRSPEC1_MODE: NIRSpec1 Fiber Mode
+NRSP2MOD= 'UNDEFINED'          / GOSIM_NIRSPEC2_MODE: NIRSpec2 Fiber Mode
+NRSP3MOD= 'UNDEFINED'          / GOSIM_NIRSPEC3_MODE: NIRSpec3 Fiber Mode
+NRSP4MOD= 'UNDEFINED'          / GOSIM_NIRSPEC4_MODE: NIRSpec4 Fiber Mode
+NRSP1PUL=                  0.0 / GOSIM_NIRSPEC1_PULSEW: NIRSpec1 Fiber Pulse Wid
+NRSP2PUL=                  0.0 / GOSIM_NIRSPEC2_PULSEW: NIRSpec2 Fiber Pulse Wid
+NRSP3PUL=                  0.0 / GOSIM_NIRSPEC3_PULSEW: NIRSpec3 Fiber Pulse Wid
+NRSP4PUL=                  0.0 / GOSIM_NIRSPEC4_PULSEW: NIRSpec4 Fiber Pulse Wid
+NRSP1DEL=                  0.0 / GOSIM_NIRSPEC1_DELAY: NIRSpec1 Fiber Delay in m
+NRSP2DEL=                  0.0 / GOSIM_NIRSPEC2_DELAY: NIRSpec2 Fiber Delay in m
+NRSP3DEL=                  0.0 / GOSIM_NIRSPEC3_DELAY: NIRSpec3 Fiber Delay in m
+NRSP4DEL=                  0.0 / GOSIM_NIRSPEC4_DELAY: NIRSpec4 Fiber Delay in m
+NRSP1TRN=                  0.0 / GOSIM_NIRSPEC1_TRAININT: NIRSpec1 Fiber Pulse T
+NRSP2TRN=                  0.0 / GOSIM_NIRSPEC2_TRAININT: NIRSpec2 Fiber Pulse T
+NRSP3TRN=                  0.0 / GOSIM_NIRSPEC3_TRAININT: NIRSpec3 Fiber Pulse T
+NRSP4TRN=                  0.0 / GOSIM_NIRSPEC4_TRAININT: NIRSpec4 Fiber Pulse T
+NRSP1AFL=                  0.0 / GOSIM_CUR_NIRSPEC1_FLUX: NIRSpec1 Fiber Calcula
+NRSP2AFL=                  0.0 / GOSIM_CUR_NIRSPEC2_FLUX: NIRSpec2 Fiber Calcula
+NRSP3AFL=                  0.0 / GOSIM_CUR_NIRSPEC3_FLUX: NIRSpec3 Fiber Calcula
+NRSP4AFL=                  0.0 / GOSIM_CUR_NIRSPEC4_FLUX: NIRSpec4 Fiber Calcula
+NRS2LMPT=                  0.0 / GOSIM_NIRSPEC2_LMP_TEMP: NIRSpec2 Fiber Tungste
+NRS4LMPT=                  0.0 / GOSIM_NIRSPEC4_LMP_TEMP: NIRSpec4 Fiber Tungste
+CBNRSTP =                  0.0 / GOSIM_TEMP_IS_NIRSPEC: SDM Cold Box NIRSPEC mod
+NRSP1CFL=                  0.0 / GOSIM_CMD_NIRSPEC1_FLUX: NIRSpec1 Fiber Command
+NRSP2CFL=                  0.0 / GOSIM_CMD_NIRSPEC2_FLUX: NIRSpec2 Fiber Command
+NRSP3CFL=                  0.0 / GOSIM_CMD_NIRSPEC3_FLUX: NIRSpec3 Fiber Command
+NRSP4CFL=                  0.0 / GOSIM_CMD_NIRSPEC4_FLUX: NIRSpec4 Fiber Command
+NRSP1ENA= 'DISABLED'           / GOSIM_FIBER_ENA_NRSPEC1: Source Fiber for NIRSP
+NRSP2ENA= 'DISABLED'           / GOSIM_FIBER_ENA_NRSPEC2: Source Fiber for NIRSP
+NRSP3ENA= 'DISABLED'           / GOSIM_FIBER_ENA_NRSPEC3: Source Fiber for NIRSP
+NRSP4ENA= 'DISABLED'           / GOSIM_FIBER_ENA_NRSPEC4: Source Fiber for NIRSP
+NRSP1FIR= 'EXTINGUISHED'       / GOSIM_CUR_FIR_NRSPEC1: Source Fiber for NIRSPEC
+NRSP2FIR= 'EXTINGUISHED'       / GOSIM_CUR_FIR_NRSPEC2: Source Fiber for NIRSPEC
+NRSP3FIR= 'EXTINGUISHED'       / GOSIM_CUR_FIR_NRSPEC3: Source Fiber for NIRSPEC
+NRSP4FIR= 'EXTINGUISHED'       / GOSIM_CUR_FIR_NRSPEC4: Source Fiber for NIRSPEC
+CNRS1FIR= 'EXTINGUISHED'       / GOSIM_CMD_FIR_NRSPEC1: Source Fiber for NIRSPEC
+CNRS2FIR= 'EXTINGUISHED'       / GOSIM_CMD_FIR_NRSPEC2: Source Fiber for NIRSPEC
+CNRS3FIR= 'EXTINGUISHED'       / GOSIM_CMD_FIR_NRSPEC3: Source Fiber for NIRSPEC
+CNRS4FIR= 'EXTINGUISHED'       / GOSIM_CMD_FIR_NRSPEC4: Source Fiber for NIRSPEC
+CIMGFSOF=                  0.0 / GOSIM_CMD_IMG_FS_OFFST: Commanded focus offset
+CV2IMGOF=                  0.0 / GOSIM_CMD_IMG_FS_V2: Commanded V2 coordinate of
+CV3IMGOF=                  0.0 / GOSIM_CMD_IMG_FS_V3: Commanded V3 coordinate of
+CDIFTMP =                  0.0 / GOSIM_CMD_DIFF_LMP_TEMP: Commanded Color Temper
+ADIFTMP =                  0.0 / GOSIM_CUR_DIFF_LMP_TEMP: Current Color Temperat
+OTPCSV  = 'None    '           / IGDP_IT_OTP_CSV_NAME: TPT CSV Name used for thi
+TPTTAG  = 'None    '           / IGDP_IT_OTP_TAG_NAME: TPT Tag Number for this E
+HISTORY Science data extracted by FITSWriter 4.7.6 on 2015-07-19T07:55:16
+HISTORY = 'Missing images: 0, total packets: 20500, good: 20500, bad: 0, &'     CONTINUE  'undefined: 0, idle: 0&'
+HISTORY Engineering table added with FITSWriter 4.7.6 on 2015-07-19T07:55:16
+END
+
+ENG Header
+
+XTENSION= 'BINTABLE'           / binary table extension
+BITPIX  =                    8 / array data type
+NAXIS   =                    2 / number of array dimensions
+NAXIS1  =                   90 / length of dimension 1
+NAXIS2  =                11121 / length of dimension 2
+PCOUNT  =                    0 / number of group parameters
+GCOUNT  =                    1 / number of groups
+TFIELDS =                    3 / number of table fields
+TTYPE1  = 'time    '
+TFORM1  = '30A     '
+TTYPE2  = 'name    '
+TFORM2  = '30A     '
+TTYPE3  = 'value   '
+TFORM3  = '30A     '
+EXTNAME = 'ENG     '           / Extension contents
+END
+
+

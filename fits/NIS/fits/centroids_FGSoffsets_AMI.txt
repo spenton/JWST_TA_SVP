@@ -1,0 +1,4 @@
+#  File_name                    X_sub    Y_sub   X_RAW    Y_RAW    FGS1_Xoff  FGS1_Yoff  FGS2_Xoff FGS2_Yoff
+amita_dit3_OSS_5GRP.fits        56.4     46.2    1960.4    977.2      -0.909     1.622    -0.950     1.599
+amita_dit3_OSS_11GRP.fits       32.4     22.2    1936.4    953.2       0.641     0.016     0.640     0.032
+amita_dit3_OSS_19GRP.fits       47.4     22.4    1951.4    953.4       0.640     1.004     0.614     1.020

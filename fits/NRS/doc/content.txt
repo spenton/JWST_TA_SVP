@@ -1,0 +1,89 @@
+.
+├── NRS
+│   ├── FIRST_EXPOSURE
+│   │   ├── NIRSpec_TA_Sim_2016830155153_491_file_1
+│   │   ├── NIRSpec_TA_Sim_2016830155153_491_file_2
+│   │   ├── NIRSpec_TA_Sim_2016830155153_491_file_3
+│   │   ├── NIRSpec_TA_Sim_2016830155153_492_file_1
+│   │   ├── NIRSpec_TA_Sim_2016830155153_492_file_2
+│   │   ├── NIRSpec_TA_Sim_2016830155153_492_file_3
+│   │   ├── NIRSpec_TA_Sim_2016830155153_README.txt
+│   │   ├── NRSSFPE-A-FULL-5200073855_3_491_SE_2016-08-30T15h51m53.fits
+│   │   └── NRSSFPE-A-FULL-5200073855_3_492_SE_2016-08-30T15h51m53.fits
+│   └── SECOND_EXPOSURE
+│       ├── NIRSpec_TA_Sim_201683015548_491_file_1
+│       ├── NIRSpec_TA_Sim_201683015548_491_file_2
+│       ├── NIRSpec_TA_Sim_201683015548_491_file_3
+│       ├── NIRSpec_TA_Sim_201683015548_492_file_1
+│       ├── NIRSpec_TA_Sim_201683015548_492_file_2
+│       ├── NIRSpec_TA_Sim_201683015548_492_file_3
+│       ├── NIRSpec_TA_Sim_201683015548_README.txt
+│       ├── NRSSFPE-A-FULL-5200073855_4_491_SE_2016-08-30T15h54m08.fits
+│       └── NRSSFPE-A-FULL-5200073855_4_492_SE_2016-08-30T15h54m08.fits
+├── NRSRAPID
+│   ├── FIRST_EXPOSURE
+│   │   ├── NIRSpec_TA_Sim_2016428165047_491_file_1
+│   │   ├── NIRSpec_TA_Sim_2016428165047_491_file_2
+│   │   ├── NIRSpec_TA_Sim_2016428165047_491_file_3
+│   │   ├── NIRSpec_TA_Sim_2016428165047_492_file_1
+│   │   ├── NIRSpec_TA_Sim_2016428165047_492_file_2
+│   │   ├── NIRSpec_TA_Sim_2016428165047_492_file_3
+│   │   ├── NIRSpec_TA_Sim_2016428165047_README.txt
+│   │   ├── NRSSFPE-A-FULL-5200073855_1_491_SE_2016-04-28T16h50m47.fits
+│   │   └── NRSSFPE-A-FULL-5200073855_1_492_SE_2016-04-28T16h50m47.fits
+│   └── SECOND_EXPOSURE
+│       ├── NIRSpec_TA_Sim_2016428165242_491_file_1
+│       ├── NIRSpec_TA_Sim_2016428165242_491_file_2
+│       ├── NIRSpec_TA_Sim_2016428165242_491_file_3
+│       ├── NIRSpec_TA_Sim_2016428165242_492_file_1
+│       ├── NIRSpec_TA_Sim_2016428165242_492_file_2
+│       ├── NIRSpec_TA_Sim_2016428165242_492_file_3
+│       ├── NIRSpec_TA_Sim_2016428165242_README.txt
+│       ├── NRSSFPE-A-FULL-5200073855_2_491_SE_2016-04-28T16h52m42.fits
+│       └── NRSSFPE-A-FULL-5200073855_2_492_SE_2016-04-28T16h52m42.fits
+├── NRSRAPIDD1
+│   ├── FIRST_EXPOSURE
+│   │   ├── NIRSpec_TA_Sim_201683016025_491_file_1
+│   │   ├── NIRSpec_TA_Sim_201683016025_491_file_2
+│   │   ├── NIRSpec_TA_Sim_201683016025_491_file_3
+│   │   ├── NIRSpec_TA_Sim_201683016025_492_file_1
+│   │   ├── NIRSpec_TA_Sim_201683016025_492_file_2
+│   │   ├── NIRSpec_TA_Sim_201683016025_492_file_3
+│   │   ├── NIRSpec_TA_Sim_201683016025_README.txt
+│   │   ├── NRSSFPE-A-FULL-5200073855_5_491_SE_2016-08-30T16h02m05.fits
+│   │   └── NRSSFPE-A-FULL-5200073855_5_492_SE_2016-08-30T16h02m05.fits
+│   └── SECOND_EXPOSURE
+│       ├── NIRSpec_TA_Sim_201683016113_491_file_1
+│       ├── NIRSpec_TA_Sim_201683016113_491_file_2
+│       ├── NIRSpec_TA_Sim_201683016113_491_file_3
+│       ├── NIRSpec_TA_Sim_201683016113_492_file_1
+│       ├── NIRSpec_TA_Sim_201683016113_492_file_2
+│       ├── NIRSpec_TA_Sim_201683016113_492_file_3
+│       ├── NIRSpec_TA_Sim_201683016113_README.txt
+│       ├── NRSSFPE-A-FULL-5200073855_6_491_SE_2016-08-30T15h54m08.fits
+│       └── NRSSFPE-A-FULL-5200073855_6_492_SE_2016-08-30T15h54m08.fits
+├── NRSRAPIDD2
+│   ├── FIRST_EXPOSURE
+│   │   ├── NIRSpec_TA_Sim_201683016354_491_file_1
+│   │   ├── NIRSpec_TA_Sim_201683016354_491_file_2
+│   │   ├── NIRSpec_TA_Sim_201683016354_491_file_3
+│   │   ├── NIRSpec_TA_Sim_201683016354_492_file_1
+│   │   ├── NIRSpec_TA_Sim_201683016354_492_file_2
+│   │   ├── NIRSpec_TA_Sim_201683016354_492_file_3
+│   │   ├── NIRSpec_TA_Sim_201683016354_README.txt
+│   │   ├── NRSSFPE-A-FULL-5200073855_7_491_SE_2016-08-30T16h35m04.fits
+│   │   └── NRSSFPE-A-FULL-5200073855_7_492_SE_2016-08-30T16h35m04.fits
+│   └── SECOND_EXPOSURE
+│       ├── NIRSpec_TA_Sim_20168301636_491_file_1
+│       ├── NIRSpec_TA_Sim_20168301636_491_file_2
+│       ├── NIRSpec_TA_Sim_20168301636_491_file_3
+│       ├── NIRSpec_TA_Sim_20168301636_492_file_1
+│       ├── NIRSpec_TA_Sim_20168301636_492_file_2
+│       ├── NIRSpec_TA_Sim_20168301636_492_file_3
+│       ├── NIRSpec_TA_Sim_20168301636_README.txt
+│       ├── NRSSFPE-A-FULL-5200073855_8_491_SE_2016-08-30T15h54m08.fits
+│       └── NRSSFPE-A-FULL-5200073855_8_492_SE_2016-08-30T15h54m08.fits
+├── ORIENTATION.pptx
+└── content.txt
+
+12 directories, 74 files

@@ -1,0 +1,17 @@
+File: ta_sample_data_NRCA5_6frames.fits
+
+No.    Name     Type      Cards Dimensions  Format
+ 0   PRIMARY   PrimaryHDU   7  (64,64,6)  int16     
+
+PRIMARY Header
+
+SIMPLE  =                    T /image conforms to FITS standard
+BITPIX  =                   16 /bits per data value
+NAXIS   =                    3 /number of axes
+NAXIS1  =                   64 /
+NAXIS2  =                   64 /
+NAXIS3  =                    6 /
+EXTEND  =                    T /file may contain extensions
+END
+
+
